@@ -1,0 +1,21 @@
+body {
+  margin: 100px;
+}
+button {
+  position: relative;
+}
+button span {
+  position: absolute;
+  white-space: nowrap;
+  border: 1px solid red;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%);居中 */
+  display: none;
+}
+button:hover span {
+  display: inline-block;
+}
+/* 鼠标放上去会悬浮出提示文字 */

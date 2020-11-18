@@ -1,0 +1,36 @@
+.container {
+  border: 1px solid red;
+  height: 300px;
+  position: relative;
+}
+
+.demo {
+  border: 1px solid green;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  /*position: static;默认值 */
+  /* position: relative;位置不变，但可以加偏移量，比如top:10px;left:10px; */
+}
+.demo2 {
+  /* border: 1px solid green; */
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  /* position: relative; */
+
+  /*position: static;默认值 */
+  /* position: relative;位置不变，但可以加偏移量，比如top:10px;left:10px; */
+}
+.close {
+  position: absolute;
+  /* 找祖先元素离得最近的relative的对齐  */
+  /* absolute相对于祖先元素中最近的一个定位元素定位的，除了position：static;其他都是定位元素*/
+  top: 0;
+  right: 0;
+  padding: 0 8px;
+  background: cadetblue;
+  color: white;
+}
